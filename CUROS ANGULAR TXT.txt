@@ -1,0 +1,23 @@
+CUROS ANGULAR
+
+**Requisitos**
+NodeJS
+javaScript
+Css
+
+//Instalar Angular
+npm install @angular
+
+
+//Crear un nuevo componente CLI
+ng generate component persona
+ng g c {nombreComponente}
+
+
+//instalacion de bootstrap, jquery, popper
+npm install bootstrap --save
+npm install jquery --save
+npm install popper.js --save
+
+
+
