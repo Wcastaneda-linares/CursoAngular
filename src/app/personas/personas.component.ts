@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { PersonaComponent } from '../persona/persona.component';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { FormsModule } from '@angular/forms';
 
   imports: [
       PersonaComponent,
-      FormsModule
+      FormsModule,
+      CommonModule
   ],
   templateUrl: './personas.component.html',
   styleUrls: [
@@ -20,10 +22,12 @@ import { FormsModule } from '@angular/forms';
 })
 export class PersonasComponent {
   deshabilitar =  false;
-  mensaje = 'No se ha aregado ninguna persona';
+  mensaje = '';
   titulo = 'Ingeniero';
+  mostrar=false;
 
   agregarPersona(){
+    this.mostrar = true;
     this.mensaje = 'Persona agregada';
   }
 
